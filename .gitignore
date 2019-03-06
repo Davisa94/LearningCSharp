@@ -1,3 +1,5 @@
 HelloWorldV2.0/HelloWorld/.vs/HelloWorld/v15/Server/sqlite3/db.lock
 *.lock
 formApplication/WindowsFormsApp1/Properties/*.*
+formApplication/WindowsFormsApp1/Properties/Settings.settings
+formApplication/WindowsFormsApp1/Properties/Settings.settings

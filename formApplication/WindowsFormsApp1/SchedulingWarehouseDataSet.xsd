@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SchedulingWarehouseDataSet" targetNamespace="http://tempuri.org/SchedulingWarehouseDataSet.xsd" xmlns:mstns="http://tempuri.org/SchedulingWarehouseDataSet.xsd" xmlns="http://tempuri.org/SchedulingWarehouseDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SchedulingWarehouseConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SchedulingWarehouseConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WindowsFormsApp1.Properties.Settings.GlobalReference.Default.SchedulingWarehouseConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="course_infoTableAdapter" GeneratorDataComponentClassName="course_infoTableAdapter" Name="course_info" UserDataComponentName="course_infoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SchedulingWarehouseConnectionString (Settings)" DbObjectName="SchedulingWarehouse.course_info" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `course_id`, `min_credits`, `max_credits`, `course_description`, `course_title`, `course_prefix`, `course_code` FROM `course_info`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SchedulingWarehouseDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="SchedulingWarehouseDataSet" msprop:Generator_UserDSName="SchedulingWarehouseDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="course_info" msprop:Generator_TableClassName="course_infoDataTable" msprop:Generator_TableVarName="tablecourse_info" msprop:Generator_TablePropName="course_info" msprop:Generator_RowDeletingName="course_infoRowDeleting" msprop:Generator_RowChangingName="course_infoRowChanging" msprop:Generator_RowEvHandlerName="course_infoRowChangeEventHandler" msprop:Generator_RowDeletedName="course_infoRowDeleted" msprop:Generator_UserTableName="course_info" msprop:Generator_RowChangedName="course_infoRowChanged" msprop:Generator_RowEvArgName="course_infoRowChangeEvent" msprop:Generator_RowClassName="course_infoRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
