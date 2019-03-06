@@ -11,7 +11,8 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            //
+            //write text to console:
+            Console.WriteLine("Hello");
 
         }
     }
